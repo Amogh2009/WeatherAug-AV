@@ -8,7 +8,7 @@
 
 WeatherAug-AV investigates whether curriculum-based weather augmentation improves object detection robustness under adverse weather conditions for autonomous driving systems. We train and evaluate YOLOv8s on BDD100K under three conditions: no augmentation (baseline), random weather augmentation, and curriculum-scheduled weather augmentation (WeatherAug).
 
-Our key finding: while both augmentation strategies improve performance on synthetic controlled weather benchmarks, the advantage of curriculum scheduling over random augmentation is not consistently observed on real-world adverse weather images — suggesting that synthetic benchmarks may overestimate real-world robustness gains.
+Our key finding: while both augmentation strategies improve performance on synthetic controlled weather benchmarks, the advantage of curriculum scheduling over random augmentation is not consistently observed on real-world adverse weather images â€” suggesting that synthetic benchmarks may overestimate real-world robustness gains.
 
 ## Results
 
@@ -33,7 +33,7 @@ Our key finding: while both augmentation strategies improve performance on synth
 
 ## Dataset
 
-We use [BDD100K](https://bdd-data.berkeley.edu/) — a large-scale diverse driving dataset with weather annotations. Our experimental split:
+We use [BDD100K](https://bdd-data.berkeley.edu/) â€” a large-scale diverse driving dataset with weather annotations. Our experimental split:
 - **Training:** 66,000 images (excluding held-out weather test set)
 - **Held-out real test:** 2,000 rainy + 2,000 snowy images
 - **Synthetic test:** 2,000 images per condition (6 conditions)
@@ -74,7 +74,7 @@ python evaluate.py --model runs/baseline/weights/best.pt --config configs/bdd100
 
 If you use this code in your research, please cite:
 
-@misc{gupta2026weatheraugav,
+@misc{anonymous2026weatheraugav,
 title={WeatherAug: Evaluating Curriculum-Based Weather Augmentation for Adverse Weather Robustness in Autonomous Vehicle Object Detection},
 author={Gupta, Amogh},
 year={2026}
